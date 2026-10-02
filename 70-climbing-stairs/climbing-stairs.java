@@ -6,10 +6,10 @@ class Solution {
         }
         int firstTerm = 1;
         int secondTerm = 2;
-        for(int i = 0; i < n;i++){
+        for(int i = 0; i < n-1;i++){
             int thirdTerm = firstTerm + secondTerm;
 
-            firstTerm = secondTerm-1;
+            firstTerm = secondTerm;
             secondTerm = thirdTerm;
         }
         return firstTerm;
